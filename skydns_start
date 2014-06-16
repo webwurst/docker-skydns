@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+exec skydns \
+  -addr 0.0.0.0:53 \
+  -machines http://${ETCD_1_PORT_4001_TCP_ADDR}:${ETCD_1_PORT_4001_TCP_PORT}
